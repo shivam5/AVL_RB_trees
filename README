@@ -1,0 +1,85 @@
+
+Project Details
+================
+This project implements AVL trees and Red Black trees in C++.
+This is a general version of trees, the elements of the tree are key-value pairs.
+The keys are taken to be integers, but the data can be anything.
+
+Author
+==============
+Shivam Mittal
+2nd year B.Tech Computer Science Engineering, IIT Ropar
+Email - 2015csb1032@iitrpr.ac.in
+GIthub profile - github.com/shivam5
+
+
+COMPILING AND RUNNING PROGRAM
+===============================
+1. Extract the contents of this archive in a folder.
+2. The 3 tasks are done separately, and all the contents of question i are in Qi folder where i=1,2,3
+3. Navigate to the folder which contains all these files using cd commands for the respective question.
+4. Type make and press enter. This will automatically compile the necessary file  and links them and create a file run which is necessary executable file.
+5. Type ./run and press enter.
+6. The program would run, just follow the instructions from there.
+
+
+IMPLEMENTATION
+=================
+ALl the tasks are implemented in C++ language.
+
+
+TASKS
+======
+
+Task 1 
+=======
+Implement an ordered map with height balanced binary search tree (AVL tree).
+The ordered map should contain the following functions in its interface:-
+1. firstEntry(k): Return an iterator to the entry with smallest key value; if the map is empty,
+it returns end.
+2. lastEntry(k): ​ Return an iterator to the entry with largest key value; if the map is empty, it
+returns end.
+3. ceilingEntry(k): Return an iterator to the entry with the least key value greater than or
+equal to k; if there is no such entry, it returns end.4. floorEntry(k): Return an iterator to the entry with the greatest key value less than or
+equal to k; if there is no such entry, it returns end.
+5. lowerEntry(k): ​ Return an iterator to the entry with the greatest key value less than k; if
+there is no such entry, it returns end.
+6. higherEntry(k): Return an iterator to the entry with the least key value greater than k; if
+there is no such entry, it returns end.
+7. size():​ Return the number of entries in M.
+8. empty():​ Return true if M is empty and false otherwise.
+9. find(k): ​ If M contains an entry e=(k,v),with key equal to k,then return an iterator p
+referring to this entry, and otherwise return the special iterator end.
+10. put(k,v)​ : If M does not have an entry with key equal to k, then add entry (k,v) to M, and
+otherwise, replace the value field of this entry with v; return an iterator to the
+inserted/modified entry.
+11. erase(k): Remove from M the entry with key equal to k; an error condition occurs if M
+has no such entry.
+12. erase(p): ​ Remove from M the entry referenced by iterator p; an error condition occurs if
+p points to the end sentinel.
+
+
+Task 2
+=======
+Read a sequence of n space separated integers from a file and insert into
+the ordered map implementation of the previous question. Now, for a given target sum,
+write a function that returns true if there is a pair with sum equals to target sum,
+otherwise returns false. The time complexity of the algorithm should be O(n) and only
+O(log n) extra memory space can be used. Do not modify the structure of the binary
+search tree. Note that you cannot read the numbers out in an array as this will require
+O(n) memory space. Your algorithm should work on the AVL tree.
+
+
+Task 3
+========
+Implement a Red Black tree. Along with ​ insert(k,v)​ , ​ remove(k)​ , and ​ search(k)​ ,
+include the following functions:
+a.​ ​ Delete a node from the red black tree.
+b.​ ​ Count the number of leaves in a tree.
+c.​ ​ Return the height of a tree.
+d.​ ​ Return a list of all keys in a tree between a and b.
+
+
+
+
+THANK YOU
